@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 app = Flask(__name__)
 
 
@@ -17,14 +17,6 @@ def vocabulaire():
 	return render_template('vocabulaire.html')
 
 
-@app.route('/test', methods=['GET', 'POST'])
-def test():
-    if request.method == 'GET':
-        return render_template('test.html')
-    elif request.method == 'POST':
-    	print(request.form['pseudo'])
-    	return 'salut ' + request.form['pseudo']
- 		
 
 if __name__ == '__main__':
 	app.run(debug=True)

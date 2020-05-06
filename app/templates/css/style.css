@@ -1,0 +1,53 @@
+ body
+ {
+ 	background: url('../img/background.jpg') no-repeat;
+ 	background-size: cover;
+ }
+
+header
+{
+	font-family: Arial;
+} 
+
+ header, nav
+{
+	color: white;
+}
+
+header nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.8);
+	line-height: 40px;
+	text-align: center;
+}
+header nav ul li a
+{
+	display: block;
+}
+header nav ul li a:hover
+{
+	background-color: grey;
+	opacity: 0.5;
+}
+
+header nav ul li ul li
+{
+	display:none;
+}
+
+header nav ul li:hover ul li
+{
+	display: block;
+}
