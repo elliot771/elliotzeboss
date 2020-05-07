@@ -16,6 +16,13 @@ def contact():
 def vocabulaire():
 	return render_template('vocabulaire.html')
 
+@app.route('/Grammaire.html')
+def Grammaire():
+	return render_template('Grammaire.html')
+
+@app.route('/index.html')
+def index():
+	return render_template('index.html')
 
 @app.route('/test', methods=['GET', 'POST'])
 def test():
