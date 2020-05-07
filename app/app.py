@@ -12,7 +12,7 @@ def home():
 def contact():
 	return render_template('contact.html')
 
-@app.route('/vocabulaire/')
+@app.route('/vocabulaire.html')
 def vocabulaire():
 	return render_template('vocabulaire.html')
 
